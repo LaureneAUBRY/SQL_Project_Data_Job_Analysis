@@ -28,6 +28,7 @@ sont :
 Le modèle conceptuel associé est disponible ci-dessous.
 
 ![MCD](/images/projet_sql_mcd_grand.png)
+
 *Modèle conceptuel de données*
 
 Le dataset comportant 787686 offres d’emplois du monde entier, nous nous sommes concentrés sur des annonces pour des postes de Data Analyst et de Data Scientist en France.
@@ -96,6 +97,7 @@ A présent, nous allons chercher les compétences demandées pour les postes tro
 | airflow     | 2           |
 | excel       | 2           |
 | spark       | 2           |
+
 *Compétences les plus demandées pour les postes de Data Analyst les mieux rémunérés*
 
 | Compétences | Occurrences |
@@ -110,6 +112,7 @@ A présent, nous allons chercher les compétences demandées pour les postes tro
 | numpy       | 2           |
 | git         | 2           |
 | airflow     | 2           |
+
 *Compétences les plus demandées pour les postes de Data Scientist les mieux rémunérés*
 
 En 2023, pour devenir Data Analyst ou Data Scientist, il était nécessaire de connaître le SQL et Python. De plus, une expérience en Tableau était recherchée pour les Data Analysts. Pour les Data Scientists, la connaissance du langage R était également indispensable.
@@ -130,6 +133,7 @@ Afin de devenir Data Analyst ou Data Scientist, des prérquis sont demandés. Co
 | airflow     | 5           |
 | spark       | 4           |
 | github      | 4           |
+
 *Compétences les plus demandées en général pour un Data Analyst*
 
 | Compétences  | Occurrences |
@@ -144,6 +148,7 @@ Afin de devenir Data Analyst ou Data Scientist, des prérquis sont demandés. Co
 | scikit-learn | 6           |
 | java         | 6           |
 | tensorflow   | 6           |
+
 *Compétences les plus demandées en général pour un Data Scientist*
 
 Nous remarquons tout de suite que les tableaux sont très similaires à la partie [2](#2---compétences-des-postes-aux-salaires-les-plus-élevés) ; les 4 premières lignes sont identiques en terme de compétences.
@@ -167,6 +172,7 @@ Une question intéressante est d'identifier comment les compétences peuvent inf
 | c#          | 111202.00     |
 | php         | 111175.00     |
 | c++         | 111175.00     |
+
 *Compétences les plus demandées en fonction du salaire des Data Analyst*
 
 | Compétences | Salaire moyen |
@@ -181,6 +187,7 @@ Une question intéressante est d'identifier comment les compétences peuvent inf
 | matplotlib  | 140265.00     |
 | pandas      | 137377.83     |
 | aws         | 136427.83     |
+
 *Compétences les plus demandées en fonction du salaire des Data Scientist*
 
 Les résultats obtenus pour les Data Analysts sont différents de ceux observés précédemment. Plusieurs langages de programmation sont présents comme C, C#, C++ et PHP.
@@ -202,6 +209,7 @@ Nous pouvons arrivons à notre principal objectif étant d'identifier les compé
 | airflow     | 5       | 87297.00      |
 | aws         | 4       | 105708.00     |
 | spark       | 4       | 103326.75     |
+
 *Les 10 compétences à acquérir pour être Data Analyst*
 
 | Compétences  | Demande | Salaire moyen |
@@ -216,6 +224,7 @@ Nous pouvons arrivons à notre principal objectif étant d'identifier les compé
 | scikit-learn | 6       | 125393.75     |
 | azure        | 6       | 114716.67     |
 | tensorflow   | 6       | 103748.42     |
+
 *Les 10 compétences à acquérir pour être Data Scientist*
 
 Comme nous avons pris en priorité les compétences les plus demandées, les tableaux ci-dessus ressemblent presque entièrement à ceux de la partie [3](#3---compétences-les-plus-demandées) sur les compétences les plus demandées, ce qui était attendu.
