@@ -8,10 +8,10 @@ L'objectif principal de ce projet est d'identifier les compétences les plus dem
 Ce projet est basé d'une vidéo sur YouTube de Luke Barousse "SQL for Data Analytics - Learn SQL in 4 Hours".
 
 Pour mener à bien ce projet, nous nous sommes servis de :
-- SQL (PostgreSQL) : requêtes et manipulation des données
-- Python : ajout des fichiers CSV dans les tables
-- Visual Studio Code : éditeur de code choisi pour interagir avec la base de données
-- Git et GitHub : partage du projet
+- SQL (PostgreSQL) : requêtes et manipulation des données ;
+- Python : ajout des fichiers CSV dans les tables ;
+- Visual Studio Code : éditeur de code choisi pour interagir avec la base de données ;
+- Git et GitHub : partage du projet.
 
 L'ensemble des requêtes SQL ayant été utiles durant ce projet se trouvent [ici](/projet_sql/).
 
@@ -43,7 +43,7 @@ Les emplois demandant plusieurs années d’expérience ont été conservé dans
 ### 1 - Salaires les plus élevés
 Tout d'abord, nous nous intéressons aux salaires les plus élevés du marché de la Data Science. Cette recherche est essentielle pour l'objectif final de notre projet puisque nous voulons mettre en lumière les compétences à avoir en fonction du poste souhaité.
 
-Nous récupérons uniquement les noms des emplois et le salaire associé. Nous limitons le nombre de résultats à 10 pour rendre plus rapide l'exécution de la requête et d'avoir une idée générale des emplois les mieux rémunérés.
+Nous récupérons uniquement le nom de l'offre, le type d'emploi (Data Analyst ou Data Scientist), et le salaire associé. Nous limitons le nombre de résultats à 10 pour rendre plus rapide l'exécution de la requête et d'avoir une idée générale des emplois les mieux rémunérés.
 
 Les résultats obtenus par les requêtes du fichier [q1.sql](/projet_sql/q1.sql) sont retranscrits dans les tableaux ci-dessous :
 
@@ -77,13 +77,13 @@ Les résultats obtenus par les requêtes du fichier [q1.sql](/projet_sql/q1.sql)
 
 *Les 10 postes de Data Scientist présentant les meilleurs salaires en France*
 
-En France, les métiers dans la Data rapportant le plus au niveau du salaire annuel sont essentiellement des postes de Data Scientist. Le plus élevé est cependant un poste de Data Engineer ayant un salaire annuel de 249000€, soit 20750€ par mois.
+En France, les métiers dans la Data rapportant le plus au niveau du salaire annuel sont essentiellement des postes de Data Scientist. Cependant, parmi les deux tableaux, le plus élevé est, cependant, un poste de Data Analyst ayant un salaire annuel de 200000€, soit 16666€ par mois.
 
 Nous rappelons que les salaires présentés dans les tableaux ci-dessus correspondent aux plus hauts salaires et ne représentent pas le marché global.
 
 ### 2 - Compétences des postes aux salaires les plus élevés
 
-A présent, nous allons chercher les compétences demandées pour les postes trouvés dans la partie précédente.Effectivement, si notre but est d'obtenir l'un de ces postes, il faut vérifier si nous possédons les prérequis associés. Nous les avons regroupés dans les tableaux suivants.
+A présent, nous allons chercher les compétences demandées pour les postes trouvés dans la partie précédente. Effectivement, si notre but est d'obtenir l'un de ces postes, il faut vérifier si nous possédons les prérequis associés. Nous les avons regroupés dans les tableaux suivants :
 
 | Compétences | Occurrences |
 | ----------- | ----------- |
@@ -119,7 +119,7 @@ En 2023, pour devenir Data Analyst ou Data Scientist, il était nécessaire de c
 
 ### 3 - Compétences les plus demandées
 
-Afin de devenir Data Analyst ou Data Scientist, des prérquis sont demandés. Contrairement à la partie précédente, nous nous intéressons aux compétences les plus demandées en général pour des postes de Data Analyst et de Data Scientist. Cette partie est tout aussi pertinente que la précédente ; elle nous permet d'avoir une vision d'ensemble sur ces postes et de savoir ce qu'un métier demande en général. De plus, les métiers les mieux rémunérés sont souvent, d'après les tables de la partie [salaires les plus élevés](#1---salaires-les-plus-élevés), des postes demandant plusieurs années d'expérience. De ce fait, ils nécessitent de connaître plus de logiciels, d'avoir plus de qualifications que des postes pour débutants.
+Comme expliqué dans la partie précédente, afin de devenir Data Analyst ou Data Scientist, des prérequis sont demandés. Contrairement à la partie précédente, nous nous intéressons aux compétences les plus demandées en général pour des postes de Data Analyst et de Data Scientist. Cette partie est tout aussi pertinente que la précédente ; elle nous permet d'avoir une vision d'ensemble sur ces postes et de savoir ce qu'un métier demande en général. De plus, les métiers les mieux rémunérés sont souvent, d'après les tables de la partie [salaires les plus élevés](#1---salaires-les-plus-élevés), des postes demandant plusieurs années d'expérience. De ce fait, ils nécessitent de connaître plus de logiciels et/ou d'avoir plus de qualifications que des postes pour débutants.
 
 | Compétences | Occurrences |
 | ----------- | ----------- |
@@ -155,7 +155,7 @@ Nous remarquons tout de suite que les tableaux sont très similaires à la parti
 
 Pour les Data Analysts, le Excel est moins demandé pour les postes les mieux rémunérés.
 
-Pour les Data Scientists, les librairies de Python (Pandas, Scikit-Learn, TensorFlow dans la table des Data Scientist de la partie [3](#3---compétences-les-plus-demandées)) sont plus demandées en général que pour des postes à forte rémunération.
+Pour les Data Scientists, les librairies de Python (Pandas, Scikit-Learn, TensorFlow) sont plus demandées en général que pour des postes à forte rémunération.
 
 ### 4 - Compétences en fonction du salaire
 Une question intéressante est d'identifier comment les compétences peuvent influencer le salaire. Pour certains, il s'agirait alors d'une manière de décider des compétences à acquérir en priorité.
@@ -229,11 +229,9 @@ Nous pouvons arrivons à notre principal objectif étant d'identifier les compé
 
 Comme nous avons pris en priorité les compétences les plus demandées, les tableaux ci-dessus ressemblent presque entièrement à ceux de la partie [3](#3---compétences-les-plus-demandées) sur les compétences les plus demandées, ce qui était attendu.
 
-Nous remarquons que les 3 premières compétences à acquérir sont les mêmes pour les Data Analyst et les Data Scientist mais nous pouvons cependant noter quelques différences. Une meilleure utilisation de Python (Pandas), plus précisément du Machine Learning et du Deep Learning (Scikit-Learn et TensforFlow), est attendue pour être Data Scientist. Quant aux Data Analysts, il est indispensable de s'y connaître en visualisation de données (Power BI) mais également avoir des compétences en Big Data (Azure, Snowflake, Airflow).
+Nous remarquons que les 3 premières compétences à acquérir sont les mêmes pour les Data Analyst et les Data Scientist mais pas dans le même ordre. Nous pouvons cependant noter quelques différences ; une meilleure utilisation de Python (Pandas), plus précisément du Machine Learning et du Deep Learning (Scikit-Learn et TensforFlow), est attendue pour être Data Scientist. Quant aux Data Analysts, il est indispensable de s'y connaître en visualisation de données (Power BI) mais également avoir des compétences en Big Data (Azure, Snowflake, Airflow).
 
 ## Conclusion
 L'étude réalisée donne une meilleure vision sur les métiers de Data Analyst et Data Scientist et en quoi ils sont différents. Les Data Analysts s'occupent de la visualisation des données et de leur interprétation tandis que les Data Scientist créent des modèles de Machine Learning et de Deep Learning.
 
-L'application à un cas concret m'a permis de consolider mes compétences en SQL et de me servir de Git.
-
-Ce projet me motive de continuer à apprendre et de me spécialiser vers l'une de ces professions.
+L'application à un cas concret m'a permis de consolider mes compétences en SQL et de me servir de Git. Ce projet me motive de continuer à apprendre et de me spécialiser vers l'une de ces professions.
